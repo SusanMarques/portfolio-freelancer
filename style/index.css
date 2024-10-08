@@ -1,0 +1,131 @@
+/* Estilos globais para o body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para cada seção */
+section {
+    width: 100vw; /* Largura de 100% da tela */
+    height: 100vh; /* Altura de 100% da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilos da primeira seção preta */
+.secao-preta {
+    background-color: black; /* Fundo preto para a seção */
+    color: white;
+}
+
+/* Estilos da imagem de fundo */
+.imagem-fundo {
+    position: absolute; /* Posiciona a imagem em relação à seção */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da seção */
+    height: 100%; /* Ocupa toda a altura da seção */
+    object-fit: cover; /* Cobre a área da seção sem distorcer a imagem */
+    opacity: 0.3; /* Ajuste a opacidade aqui */
+    z-index: 1; /* Coloca a imagem atrás do conteúdo */
+}
+
+/* Centralizando o conteúdo */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Adiciona contexto de empilhamento para o conteúdo */
+    z-index: 2; /* Garante que o conteúdo fique acima da imagem */
+}
+
+/* Estilo para o título principal (dividido em duas partes) */
+.nome {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nome em tamanho médio */
+.nome-principal {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Div para organizar os títulos menores lado a lado */
+.titulos-menores {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Estilos para os títulos menores */
+.titulo-menor {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.destaque {
+    color: #CC005F; /* Altere essa cor para a cor que você deseja */
+}
+
+/* Botão centralizado */
+.botao {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto branca */
+    border: px solid #636363; /* Borda branca */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transições para hover */
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: white; /* Fundo branco ao passar o mouse */
+    color: black; /* Texto preto ao passar o mouse */
+}
+
+/* Estilos para os ícones das redes sociais */
+.icones-sociais {
+    position: absolute; /* Permite que você posicione os ícones em relação à seção */
+    bottom: 20px; /* Distância do fundo da seção */
+    display: flex; /* Define a exibição como flexível */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 20px; /* Espaço entre os ícones */
+    z-index: 2; /* Garante que os ícones fiquem acima da imagem */
+   
+}
+
+.icones-sociais a {
+    color: white; /* Cor padrão dos ícones */
+    font-size: 2rem;
+    transition: color 0.3s; /* Transição suave para a cor ao passar o mouse */
+}
+
+.icones-sociais a:hover {
+    color: #00acee; /* Altere essa cor para o efeito hover desejado */
+}
+
+
+
+
+
+
+
