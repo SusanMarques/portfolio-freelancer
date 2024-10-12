@@ -81,7 +81,7 @@ section {
 }
 
 .destaque {
-    color: #CC005F; /* Altere essa cor para a cor que você deseja */
+    color: #EE3297; /* Altere essa cor para a cor que você deseja */
 }
 
 /* Botão centralizado */
@@ -124,6 +124,56 @@ section {
 }
 
 
+.navbar {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    align-items: center;
+    position: absolute; /* Coloca o navbar sobre a seção */
+    top: 20px; /* Posição a partir do topo da página */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o navbar */
+    z-index: 100;
+}
+
+/* Estilos da logo */
+.logo {
+    width: 200px; /* Tamanho da logo */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre a logo e o menu */
+}
+
+/* Container para o menu */
+.menu-container {
+    background-color: rgba(238, 50, 151, 0.9); /* Cor rosa */
+    padding: 10px 20px;
+    border-radius: 1px; /* Bordas arredondadas */
+}
+
+/* Estilos do menu */
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: white; /* Fundo branco ao passar o mouse */
+    color: black; /* Texto preto ao passar o mouse */
+    border-radius: 1px; /* Bordas arredondadas ao passar o mouse */
+}
 
 
 
